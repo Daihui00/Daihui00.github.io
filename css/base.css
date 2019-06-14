@@ -1,0 +1,100 @@
+/* 通用css初始化代码，个别属性按实际更改 */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+ol,
+ul,
+dl {
+	list-style: none;
+}
+i {
+    font-style: normal;
+}
+u {
+    text-decoration: none;
+}
+input,
+textarea,
+select {
+	border: none;
+	/* 去掉input标签的高亮外轮廓线 */
+	outline: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	*font-size: 100%;/*兼容IE浏览器*/
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+/* 清除浮动 */
+.clearfix::after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	*zoom:1;
+}
+/* 字体库 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../iconfont/iconfont.css');
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../iconfont/iconfont.woff') format('woff'),
+        url('../iconfont/iconfont.ttf') format('truetype'),
+        url('../iconfont/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* 页面主背景色 */
+body {
+    background-color: #f8f8f8;
+}
+/* 版心类 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+img {
+    /* 去掉在ie中图片做链接时出现的边框 */
+    border:0px;
+}
+a {
+    text-decoration: none;
+    /* 去掉链接点击时出现的高亮蓝色背景，一般移动端会去掉 */
+    -webkit-tap-highlight-color: transparent;
+}
